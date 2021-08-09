@@ -1,0 +1,169 @@
+@charset "utf-8";
+@import url("http://fonts.googleapis.com/css?family=Righteouos");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    border: 0;
+    vertical-align: top;
+}
+body {
+    font-size: 14px;
+    color: #444;
+}
+:root {
+    --red-color : #d4164c;
+    --white-color : #fff;
+    --yellow-color : #ffec6a;
+    --blue-color : #005a89;
+}
+/* 로고 */
+h1 {
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    z-index: 2;
+}
+h1 img {
+    width: 200px;
+    height: auto;
+}
+
+/* sns */
+#sns {
+    display: none;
+}
+
+/* 메뉴 */
+#menu {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 2;
+}
+#menu a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    font-family: righteous;
+    font-size: 14px;
+    color: #111;
+    text-align: right;
+    border-top: 1px solid #111;
+    transition: 0.8s;
+    opacity: 0.8;
+}
+#menu li:hover a,#menu li.on a {
+    font-size: 24px;
+    opacity: 1;
+}
+#menu li:nth-child(1):hover a,#menu li:nth-child(1).on a {
+    color: var(--red-color);
+    border-color: var(--red-color);
+}
+#menu li:nth-child(2):hover a,#menu li:nth-child(2).on a {
+    color: var(--white-color);
+    border-color: var(--white-color);
+}
+#menu li:nth-child(3):hover a,#menu li:nth-child(3).on a {
+    color: var(--yellow-color);
+    border-color: var(--yellow-color);
+}
+#menu li:nth-child(4):hover a,#menu li:nth-child(4).on a {
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+
+/* 레이아웃 */
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+section:nth-child(1) {
+    background-image: url('../img/bg1.jpg');
+}
+section:nth-child(2) {
+    background-image: url('../img/bg2.jpg');
+}
+section:nth-child(3) {
+    background-image: url('../img/bg3.jpg');
+}
+section:nth-child(4) {
+    background-image: url('../img/bg4.jpg');
+}
+
+/* 텍스트박스 */
+article {
+    position: relative;
+    top: 46%;
+    left: 300px;
+}
+article h2 {
+    font-size: 50px;
+    line-height: 1;
+}
+article p {
+    font-size: 20px;
+}
+
+/* 이미지설정 */
+section img {
+    position: absolute;
+}
+.img11 {
+    bottom: 20px;
+    right: 20px;
+}
+.img12 {
+    bottom: -40px;
+    right: 130px;
+}
+.img13 {
+    top: 180px;
+    right: 60px;
+}
+
+.img21 {
+    bottom: -480px;
+    right: -180px;
+}
+.img22 {
+    bottom: -40px;
+    right: 130px;
+}
+
+.img31 {
+    bottom: 30px;
+    right: 180px;
+}
+.img32 {
+    bottom: -270px;
+    right: 110px;
+}
+.img33 {
+    bottom: -130px;
+    right: -70px;
+}
+
+.img41 {
+    bottom: -120px;
+    right: 20px;
+}
+.img42 {
+    bottom: -180px;
+    right: 0;
+}
